@@ -1,0 +1,151 @@
+// @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Enriqueta:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap');
+
+$primary: #ededed;
+$secondary: #212021;
+$CTA: #3aafb9;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+//global styles
+.h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Crimson Pro';
+}
+.h2 {
+  font-size: 25px;
+  font-family: "Enriqueta";
+  font-weight: 500;
+}
+.white{
+  color: white !important;
+}
+.bold{
+  font-weight: 700 !important;
+}
+.semibold{
+  font-weight: 500 !important;
+}
+.panel {
+  background-color: $secondary;
+  padding: 20px;
+}
+.button-cta {
+  background-color: $CTA;
+  border: none;
+  color: white;
+  font-family: "Heebo";
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 0 20px;
+  width: 280px;
+  height: 40px;
+
+  box-shadow: inset 0 0 0 0 $secondary;
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+
+  &:hover {
+    box-shadow: inset 280px 0 0 0 #e0e0e0;
+    color: $secondary;
+    font-weight: 700;
+  }
+}
+
+body {
+  // background-color: $primary;
+  background-image: url("/images/WallpaperDog-4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1920px;
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  margin: 0;
+  color: $secondary;
+
+  main {
+    .top {
+      display: flex;
+      align-items: center;
+      margin: 30px 50px;
+
+      img {
+        border-radius: 50%;
+        width: 130px;
+        margin-right: 50px;
+      }
+      .panel {
+        position: absolute;
+        left: 250px;
+        right: 0px;
+        // width: 85%;
+        // width: 100%-250px;
+        height: 110px;
+        border-radius: 20px 0px 0px 0px;
+        border-bottom: solid $CTA 8px;
+        padding-left: 60px;
+      }
+      .line {
+        background-color: white;
+        width: 97%;
+        height: 3px;
+        position: absolute;
+        top: 75px;
+        right: 0px;
+        border-radius: 5px;
+      }
+      .subheader{
+        display: flex;
+        width: 100%;
+      }
+      button{
+        // position: absolute;
+        // top: 90px;
+        // right: 350px;
+        margin: 25px 50px 25px auto;
+      }
+    }
+
+    .middle {
+      align-content: center;
+
+      .page {
+        background-color: white;
+        width: 800px;
+        height: 300px;
+        padding: 10px;
+      }
+      .left {
+        border-left: solid $CTA 8px;
+        border-radius: 0 20px 20px 0;
+        margin: 70px auto 70px 15%;
+      }
+      .right {
+        margin: 70px 15% 70px auto;
+        border-right: solid $CTA 8px;
+        border-radius: 20px 0 0 20px;
+      }
+    }
+
+    .bottom {
+      height: 100px;
+      width: 100%;
+      position: sticky;
+      bottom: 0px;
+      background-color: $secondary;
+      display: inline-flex;
+
+      .info{
+        margin: 5px 20px 5px 20px !important;
+      }
+    }
+  }
+}
