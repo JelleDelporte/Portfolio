@@ -62,7 +62,7 @@ html {
 
 body {
   // background-color: $primary;
-  background-image: url("../images/WallpaperDog-4.jpg");
+  background-image: url("../images/background1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1920px;
@@ -116,24 +116,60 @@ body {
     }
 
     .middle {
-      align-content: center;
+      // align-content: center;
+      // display: flex;
+      // flex-wrap: wrap;
+      // max-inline-size: 2;
+      // max-width: 1200px;
+      // justify-content: center ;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: center;
 
       .page {
         background-color: white;
-        width: 800px;
+        // width: 800px;
         height: 300px;
         padding: 20px;
+        margin: 20px;
+        border-bottom: solid $CTA 8px;
+        border-radius: 10px 10px 0 0;
       }
-      .left {
-        border-left: solid $CTA 8px;
-        border-radius: 0 20px 20px 0;
-        margin: 70px auto 70px 15%;
+      .about{
+        width: 500px;
       }
-      .right {
-        margin: 70px 15% 70px auto;
-        border-right: solid $CTA 8px;
-        border-radius: 20px 0 0 20px;
+      .inter{
+        width: 300px;
+        height: 250px;
       }
+      .skills{
+        width: 300px;
+      }
+      .education{
+        width: 600px;
+        height: 280px;
+      }
+      .language{
+        width: 600px;
+        height: 280px;
+      }
+      .contact{
+        width: 300px;
+      }
+
+
+      // .left {
+      //   border-left: solid $CTA 8px;
+      //   border-radius: 0 20px 20px 0;
+      //   margin: 70px auto 70px 15%;
+      // }
+      // .right {
+      //   margin: 70px 15% 70px auto;
+      //   border-right: solid $CTA 8px;
+      //   border-radius: 20px 0 0 20px;
+      // }
     }
 
     .bottom {

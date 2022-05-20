@@ -42,6 +42,28 @@ gsap.from(".d", {
   }
 })
 
+gsap.from(".e", {
+  opacity: 0,
+  x: -300,
+  ease: "power2.out",
+  duration: 1.3,
+  scrollTrigger: {
+    trigger: ".e",
+    toggleActions: "restart complete restart restart",
+  }
+})
+
+gsap.from(".f", {
+  opacity: 0,
+  x: 300,
+  ease: "power2.out",
+  duration: 1.3,
+  scrollTrigger: {
+    trigger: ".f",
+    toggleActions: "restart complete restart restart",
+  }
+})
+
 
 
 

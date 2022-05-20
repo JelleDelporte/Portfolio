@@ -60,7 +60,7 @@ html {
 }
 
 body {
-  background-image: url("../images/WallpaperDog-4.jpg");
+  background-image: url("../images/background1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1920px;
@@ -117,27 +117,52 @@ body main .top button {
 }
 
 body main .middle {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .middle .page {
   background-color: white;
-  width: 800px;
   height: 300px;
   padding: 20px;
+  margin: 20px;
+  border-bottom: solid #3aafb9 8px;
+  border-radius: 10px 10px 0 0;
 }
 
-body main .middle .left {
-  border-left: solid #3aafb9 8px;
-  border-radius: 0 20px 20px 0;
-  margin: 70px auto 70px 15%;
+body main .middle .about {
+  width: 500px;
 }
 
-body main .middle .right {
-  margin: 70px 15% 70px auto;
-  border-right: solid #3aafb9 8px;
-  border-radius: 20px 0 0 20px;
+body main .middle .inter {
+  width: 300px;
+  height: 250px;
+}
+
+body main .middle .skills {
+  width: 300px;
+}
+
+body main .middle .education {
+  width: 600px;
+  height: 280px;
+}
+
+body main .middle .language {
+  width: 600px;
+  height: 280px;
+}
+
+body main .middle .contact {
+  width: 300px;
 }
 
 body main .bottom {
