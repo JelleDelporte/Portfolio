@@ -1,5 +1,6 @@
 // @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Enriqueta:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Enriqueta:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap');
 
 $primary: #ededed;
 $secondary: #212021;
@@ -9,43 +10,57 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.ma{
+  margin: 0px !important;
+}
 
 //global styles
 .h1 {
   margin: 0;
   font-size: 40px;
   font-weight: 700;
-  color: white;
-  font-family: 'Crimson Pro';
+  font-family: 'Merriweather Sans',
 }
 .h2 {
   font-size: 25px;
-  font-family: "Enriqueta";
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 }
+//Colors
 .white{
   color: white !important;
+
 }
+.grey{
+  color: #5f5f5f;
+  font-size: 20px;
+}
+//Font
 .bold{
   font-weight: 700 !important;
 }
 .semibold{
   font-weight: 500 !important;
 }
+//Padding
+.m0{
+  margin: 0;
+}
 .panel {
   background-color: $secondary;
   padding: 20px;
 }
+//Other
 .button-cta {
   background-color: $CTA;
   border: none;
   color: white;
-  font-family: "Heebo";
-  font-size: 24px;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
   border-radius: 20px;
   padding: 0 20px;
-  width: 280px;
+  width: 290px;
   height: 40px;
 
   box-shadow: inset 0 0 0 0 $secondary;
@@ -59,6 +74,28 @@ html {
     font-weight: 700;
   }
 }
+.progressbar{
+  width: 100%;
+  height: 10px;
+  background-color: #F1F1F1;
+
+  .progress{
+    background-color: #9E9E9E;
+    height: 10px;
+    width: 0px;
+  }
+  .p100{
+    width: 100% !important;
+  } 
+  .p80{
+    width: 80% !important;
+  }
+  .p50{
+    width: 50% !important;
+  }
+
+}
+
 
 body {
   // background-color: $primary;
@@ -66,7 +103,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1920px;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Mulish', sans-serif;
   padding: 0;
   margin: 0;
   color: $secondary;
@@ -93,6 +130,7 @@ body {
         border-radius: 20px 0px 0px 0px;
         border-bottom: solid $CTA 8px;
         padding-left: 60px;
+
       }
       .line {
         background-color: white;
@@ -132,7 +170,7 @@ body {
         background-color: white;
         // width: 800px;
         height: 300px;
-        padding: 20px;
+        padding: 0 20px;
         margin: 20px;
         border-bottom: solid $CTA 8px;
         border-radius: 10px 10px 0 0;
@@ -149,7 +187,7 @@ body {
       }
       .education{
         width: 600px;
-        height: 280px;
+        height: 320px;
       }
       .language{
         width: 600px;
