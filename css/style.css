@@ -257,7 +257,7 @@ body main .bottom .info {
     margin: 10px auto 10px 0px;
   }
   h1 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
