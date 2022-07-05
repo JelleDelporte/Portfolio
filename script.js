@@ -1,70 +1,68 @@
-gsap.from(".a", {
-  opacity: 0,
-  x: -300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".a",
-    toggleActions: "restart complete restart complete",
-  }
+const pagesL = gsap.utils.toArray('.left');
+const pagesR = gsap.utils.toArray('.right');
+
+// function buildConditionalTween(mediaQuery) {
+//   if (mediaQuery.matches) {
+pagesL.forEach(page => {
+  gsap.from(page, {
+    opacity: 0,
+    x: -300,
+    ease: "power2.out",
+    duration: 1.3,
+    scrollTrigger: {
+      trigger: page,
+      toggleActions: "restart complete restart complete",
+    }
+  })
 })
 
-gsap.from(".b", {
-  opacity: 0,
-  x: 300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".b",
-    toggleActions: "restart complete restart restart",
-  }
+pagesR.forEach(page => {
+  gsap.from(page, {
+    opacity: 0,
+    x: 300,
+    ease: "power2.out",
+    duration: 1.3,
+    scrollTrigger: {
+      trigger: page,
+      toggleActions: "restart complete restart complete",
+    }
+  })
 })
+//   }
+//   else{
+//     console.log("test")
+//     pagesL.forEach(page => {
+//       gsap.from(page, {
+//         opacity: 0,
+//         ease: "power2.out",
+//         duration: 1.3,
+//         scrollTrigger: {
+//           trigger: page,
+//           toggleActions: "restart complete restart complete",
+//         }
+//       })
+//     })
 
-gsap.from(".c", {
-  opacity: 0,
-  x: -300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".c",
-    toggleActions: "restart complete restart restart",
-  }
-})
+//     pagesR.forEach(page => {
+//       gsap.from(page, {
+//         opacity: 0,
+//         ease: "power2.out",
+//         duration: 1.3,
+//         scrollTrigger: {
+//           trigger: page,
+//           toggleActions: "restart complete restart complete",
+//         }
+//       })
+//     })
+//   }
 
-gsap.from(".d", {
-  opacity: 0,
-  x: 300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".d",
-    toggleActions: "restart complete restart restart",
-  }
-})
+// }
 
-gsap.from(".e", {
-  opacity: 0,
-  x: -300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".e",
-    toggleActions: "restart complete restart restart",
-  }
-})
+// const mediaQuery = window.matchMedia("(min-width: 1060px)");
 
-gsap.from(".f", {
-  opacity: 0,
-  x: 300,
-  ease: "power2.out",
-  duration: 1.3,
-  scrollTrigger: {
-    trigger: ".f",
-    toggleActions: "restart complete restart restart",
-  }
-})
+// buildConditionalTween(mediaQuery);
 
-
+// mediaQuery.addListener(buildConditionalTween);
 
 
 // https://www.youtube.com/watch?v=X7IBa7vZjmo

@@ -61,6 +61,7 @@ html {
   border-radius: 20px;
   padding: 0 20px;
   width: 290px;
+  min-width: 290px;
   height: 40px;
 
   box-shadow: inset 0 0 0 0 $secondary;
@@ -115,6 +116,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0;
 
       img {
         border-radius: 50%;
@@ -122,8 +124,7 @@ body {
         margin: 50px;
       }
       .panel {
-        min-width: 500px;
-        width: 55%;
+        width: 45%;
         height: 120px;
         border-radius: 10px 10px 0px 0px;
         border-bottom: solid $CTA 8px;
@@ -210,5 +211,46 @@ body {
         margin: 5px 20px 5px 20px !important;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+    .page{
+      width: 80% !important;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .panel{
+      min-width: 600px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  .top{
+    width: 100%;
+    .panel{
+      width: 80% !important;
+      min-width: none !important;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .panel{
+    height: 150px !important;
+    .subheader{
+      flex-wrap: wrap;
+    }
+    button{
+      margin: 0px auto 0px 0px !important;
+    }
+  }
+  p{
+    margin: 10px auto 10px 0px;
+  }
+  h1{
+    font-size: 32px;
   }
 }
