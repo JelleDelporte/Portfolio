@@ -161,6 +161,14 @@ body main .middle .language {
 body main .middle .contact {
   width: 300px;
 }
+body main .middle .contact .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+body main .middle .contact .logo img {
+  width: 40px;
+}
 body main .bottom {
   height: 100px;
   width: 100%;

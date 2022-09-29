@@ -190,6 +190,16 @@ body {
       }
       .contact{
         width: 300px;
+        .logo{
+          display: flex;
+          justify-content: center;
+          margin-top: 40px;
+          img{
+            width: 40px;
+  
+          }
+        }
+
       }
 
 
