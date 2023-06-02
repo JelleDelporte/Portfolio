@@ -1,6 +1,6 @@
 // @import url(reset.css);
 // @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Enriqueta:wght@400;500;600;700&family=Heebo:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap");
 
 $primary: #ededed;
 $secondary: #323031;
@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.ma{
+.ma {
   margin: 0px !important;
 }
 
@@ -19,30 +19,29 @@ html {
   margin: 0;
   font-size: 40px;
   font-weight: 700;
-  font-family: 'Merriweather Sans',
+  font-family: "Merriweather Sans";
 }
 .h2 {
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 //Colors
-.white{
+.white {
   color: white !important;
-
 }
-.grey{
+.grey {
   color: #5f5f5f;
 }
 //Font
-.bold{
+.bold {
   font-weight: 700 !important;
 }
-.semibold{
+.semibold {
   font-weight: 500 !important;
 }
 //Padding
-.m0{
+.m0 {
   margin: 0;
 }
 .panel {
@@ -54,7 +53,7 @@ html {
   background-color: $CTA;
   border: none;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
   border-radius: 20px;
@@ -74,28 +73,26 @@ html {
     font-weight: 700;
   }
 }
-.progressbar{
+.progressbar {
   width: 100%;
   height: 10px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 
-  .progress{
-    background-color: #9E9E9E;
+  .progress {
+    background-color: #9e9e9e;
     height: 10px;
     width: 0px;
   }
-  .p100{
+  .p100 {
     width: 100% !important;
-  } 
-  .p80{
+  }
+  .p80 {
     width: 80% !important;
   }
-  .p50{
+  .p50 {
     width: 50% !important;
   }
-
 }
-
 
 body {
   // background-color: $primary;
@@ -103,13 +100,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed !important;
   background-size: 1920px;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   padding: 0;
   margin: 0;
   color: $secondary;
 
-
-  
   main {
     .top {
       display: flex;
@@ -148,13 +143,12 @@ body {
       //   display: flex;
       //   width: 100%;
       // }
-      button{
+      button {
         margin: auto 20px auto auto;
       }
     }
 
     .middle {
-      
       display: flex;
       flex-wrap: wrap;
       max-width: 1200px;
@@ -170,38 +164,38 @@ body {
         border-bottom: solid $CTA 8px;
         border-radius: 5px 5px 0 0;
       }
-      .about{
+      .about {
         width: 500px;
       }
-      .inter{
+      .inter {
         width: 300px;
         height: 250px;
       }
-      .skills{
+      .skills {
         width: 300px;
       }
-      .education{
+      .education {
         width: 600px;
         height: 320px;
       }
-      .language{
-        width: 600px;
+      .language {
+        width: 400px;
         height: 280px;
       }
-      .contact{
+      .contact {
         width: 300px;
-        .logo{
+        .logo {
           display: flex;
           justify-content: center;
           margin-top: 40px;
-          img{
+          img {
             width: 40px;
-  
           }
         }
-
       }
-
+      .work {
+        width: 500px;
+      }
 
       // .left {
       //   border-left: solid $CTA 8px;
@@ -223,7 +217,7 @@ body {
       background-color: $secondary;
       display: inline-flex;
 
-      .info{
+      .info {
         margin: 5px 20px 5px 20px !important;
       }
     }
@@ -231,21 +225,21 @@ body {
 }
 
 @media screen and (max-width: 1060px) {
-    .page{
-      width: 80% !important;
-    }
+  .page {
+    width: 80% !important;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .panel{
-      min-width: 600px !important;
-    }
+  .panel {
+    min-width: 600px !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .top{
+  .top {
     width: 100%;
-    .panel{
+    .panel {
       width: 80% !important;
       min-width: none !important;
       margin: auto;
@@ -254,19 +248,19 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  .panel{
+  .panel {
     height: 150px !important;
-    .subheader{
+    .subheader {
       flex-wrap: wrap;
     }
-    button{
+    button {
       margin: 0px auto 0px 0px !important;
     }
   }
-  p{
+  p {
     margin: 10px auto 10px 0px;
   }
-  h1{
+  h1 {
     font-size: 32px !important;
   }
 }

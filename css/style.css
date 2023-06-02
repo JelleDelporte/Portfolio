@@ -69,10 +69,10 @@ html {
 .progressbar {
   width: 100%;
   height: 10px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 .progressbar .progress {
-  background-color: #9E9E9E;
+  background-color: #9e9e9e;
   height: 10px;
   width: 0px;
 }
@@ -155,7 +155,7 @@ body main .middle .education {
   height: 320px;
 }
 body main .middle .language {
-  width: 600px;
+  width: 400px;
   height: 280px;
 }
 body main .middle .contact {
@@ -169,10 +169,12 @@ body main .middle .contact .logo {
 body main .middle .contact .logo img {
   width: 40px;
 }
+body main .middle .work {
+  width: 500px;
+}
 body main .bottom {
   height: 100px;
   width: 100%;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0px;
   background-color: #323031;
